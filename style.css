@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/* common */
+html {
+  font-size: 100%;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  height: 180px;
+  border-bottom: 1px solid silver;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+#header h1 img {
+  width: 160px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#header .wrapper ol {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#header .wrapper li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#header .wrapper ol li:nth-child(6) {
+  margin-right: 240px;
+}
+
+/* main */
+#main {
+  display: flex;
+  margin-bottom: 160px;
+  gap: 64px;
+}
+
+#main .pic {
+  width: 100%;
+}
+
+#main .pic img {
+  width: 600px;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* product */
+#main .product h2 {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding: 16px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#main .product p {
+  line-height: 2;
+  margin-bottom: 16px;
+  font-size: 0.75rem;
+}
+
+/* order-table */
+#main .order-table {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#main .order-table th,
+#main .order-table td {
+  width: 18%;
+  border-right: 1px solid silver;
+  padding: 10px;
+}
+
+#main .order-table th:last-child,
+#main .order-table td:last-child {
+  width: 64%;
+  border-right: none;
+}
+
+#main .order-table select {
+  width: 100%;
+  padding: 4px;
+}
+
+#main .order-table td {
+  border-top: 1px solid silver;
+}
+
+#main a {
+  display: block;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+/* size-table */
+#main .size-table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  border-right: 1px solid silver;
+}
+
+#main .size-table th {
+  background: #eee;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+  padding: 10px;
+}
+
+#main .size-table td {
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+  padding: 10px;
+}
+
+#main .size-table th:first-child,
+#main .size-table td:first-child {
+  width: 16%;
+  background: #eee;
+  border-left: 1px solid silver;
+}
+
+/* footer */
+#footer p {
+  text-align: center;
+  margin-bottom: 240px;
+}
+
+/* sp */
+@media (max-width: 896px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    /* background: pink; */
+    font-size: .8rem;
+  }
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  /* header */
+  #header {
+    border-bottom: 0;
+    margin-bottom: 24px;
+    height: 24px;
+    white-space: nowrap;
+  }
+
+  #header h1 {
+    margin-bottom: 16px;
+  }
+
+  #header h1 img {
+    margin-top: 12px;
+    margin-bottom: 0;
+    width: 100px;
+  }
+
+  #header .wrapper ol li:nth-child(6) {
+    margin-right: 0;
+  }
+
+  #header .wrapper {
+    margin-bottom: 0;
+  }
+
+  #header nav {
+    overflow-x: scroll;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    width: 96%;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+
+  #header li a {
+    font-size: .8rem;
+  }
+
+  /* main */
+  #main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #main .product {
+    padding: 0 5%;
+  }
+
+  #main .pic {
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  #main .pic img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  #main .product h2 {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  #main .wrapper {
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  #main .wrapper p {
+    margin-bottom: 32px;
+  }
+
+  /* order-table */
+  #main .order-table {
+    margin-bottom: 40px;
+  }
+
+  /* size-table */
+  #main .size-table {
+    margin-top: 40px;
+  }
+
+  /* footer */
+  #footer p {
+    margin-bottom: 16px;
+    font-size: 0.6rem;
+  }
+}
